@@ -19,7 +19,7 @@ console.log(teacher["wayOfTeaching"])
 //"In JavaScript, a constructor object allows us to define a custom type and create multiple objects 
 //of that type, enabling code reuse and modularity."
 //and its first latter always will be capital
-
+// Aliased Object Type
 type StudentInfo ={
     name: string;
     id: number;
@@ -96,6 +96,16 @@ let About : About = {
 };
 console.log(About)
 console.log(Object.entries(About.persnolInfo))
+// Interfaces
+
+interface Manager {
+    name: string,
+    subordiates?: number
+}
+
+let storeManager: Manager = {
+    name: "mutaiba"
+}
 
 //Functions in object 
 // When we use function in obj called methodes
